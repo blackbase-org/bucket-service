@@ -24,7 +24,7 @@ WORKDIR /usr/src/app
 COPY package.json ./
 
 # Installer uniquement les dépendances de production
-RUN npm install --omit=dev
+RUN npm install
 
 
 # Copier les fichiers compilés depuis l'étape de développement
