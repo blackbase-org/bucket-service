@@ -1,5 +1,5 @@
 # Etape de build
-FROM node:20-alpine AS builder
+FROM node:20 AS builder
 ARG NODE_ENV=development
 ENV NODE_ENV=${NODE_ENV}
 WORKDIR /usr/src/app
